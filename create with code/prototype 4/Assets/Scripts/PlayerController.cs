@@ -13,8 +13,13 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     public float speed = 50;
     private GameObject focalPoint;
+    private bool hasPowerup = false;
 
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Powerup"))
+    }
     // Update is called once per frame
     void Update()
     {
